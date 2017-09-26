@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapplication.PublicActivity"
+    android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:scaleType="fitXY"
+            android:layout_below="@id/my_tool_bar"
+            android:src="@drawable/shadow"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/publicActivity_GridView"
+            android:layout_below="@id/my_tool_bar"
+            android:layout_marginTop="10dp"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center_horizontal"
+            android:scrollbars="none"
+            android:layout_marginBottom="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:background="#70000000"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:id="@+id/search_book_frame_layout"
+            android:layout_below="@id/my_tool_bar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="50dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="50dp"
+                    android:paddingRight="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/dark_input"
+                        android:hint="שם ספר/מחבר/ז'אנר"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/black"
+                        android:id="@+id/publicActivity_search_layout_et"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dark_input"
+                            android:backgroundTint="@color/publicDark"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="חפש ספר"
+                            android:onClick="searchByBookName"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dark_input"
+                            android:backgroundTint="@color/publicDark"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="חפש מחבר"
+                            android:onClick="searchByAuthor"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dark_input"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="חפש ז'אנר"
+                            android:onClick="searchByGenres"
+                            android:backgroundTint="@color/publicDark" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:background="@color/white"
+                android:id="@+id/publicActivity_Genres_listView">
+
+            </ListView>
+        </RelativeLayout>
+
+        <include layout="@layout/top_bar"
+            android:id="@+id/my_tool_bar" />
+</RelativeLayout>

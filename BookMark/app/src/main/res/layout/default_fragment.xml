@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context="com.myapplication.fragments.DefaultFragment">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/confirm_box"
+        android:id="@+id/default_fragment_MainLayout"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/black"
+            android:text="@string/confirm"
+            android:id="@+id/default_fragment_textView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333"
+            android:id="@+id/default_fragment_separator"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="אישור"
+            android:background="#5555"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/default_fragment_btn" />
+
+    </LinearLayout>
+</LinearLayout>

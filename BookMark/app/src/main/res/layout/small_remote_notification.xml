@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:id="@+id/small_notification_user_img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="75dp"
+        android:orientation="vertical"
+        android:layout_marginRight="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/darkGray"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:gravity="right"
+            android:textSize="14sp"
+            android:id="@+id/small_notification_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/darkGray"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:id="@+id/small_notification_message"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/light_gray"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1"
+        android:id="@+id/small_notification_time"/>
+
+</RelativeLayout>

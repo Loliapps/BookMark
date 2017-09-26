@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.myapplication.BookDetailActivity">
+
+    <include layout="@layout/top_bar"
+        android:id="@+id/my_tool_bar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/my_tool_bar"
+        android:src="@drawable/shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/my_tool_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="title"
+                    android:layoutDirection="rtl"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/singleBook_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="author"
+                    android:layoutDirection="rtl"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/singleBook_author"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="genres"
+                    android:layoutDirection="rtl"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/singleBook_genres"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cover"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/singleBook_img"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layoutDirection="rtl"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:id="@+id/singleBook_takzir"
+                android:padding="20dp"/>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="-10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/dark_input"
+                android:backgroundTint="@color/publicDark"
+                android:text="חפש ספר"
+                android:gravity="center"
+                android:id="@+id/singleBook_search_book_inArea"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_tool_bar"
+        android:background="#70000000"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:id="@+id/bCover_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover"
+            android:layout_margin="50dp"
+            android:scaleType="fitXY"
+            android:id="@+id/bCover_layout_book_image"/>
+
+    </LinearLayout>
+</RelativeLayout>

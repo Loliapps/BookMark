@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:background="@color/brightBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/u1"
+        app:civ_border="false"
+        app:civ_shadow="false"
+        android:id="@+id/TopBar_userImage" />
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginLeft="80dp"
+       android:layout_centerVertical="true"
+       android:src="@drawable/back_btn"
+       android:textColor="@color/white"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:textDirection="rtl"
+       android:id="@+id/TopBar_activity_name"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="60dp"
+       />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/burger_menu"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/TopBar_menu"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

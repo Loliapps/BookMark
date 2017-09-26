@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.myapplication.fragments.ConfirmDetailFragment">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="260dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/confirm_box"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="13sp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/black"
+        android:text="@string/confirm"
+        android:id="@+id/confirm_detail_fragment_textView" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dark_input"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:backgroundTint="@color/white"
+        android:hint="הקלד קוד אישור"
+        android:textColorHint="@color/light_gray"
+        android:gravity="center"
+        android:id="@+id/confirm_detail_fragment_edit_text"/>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bright_input"
+        android:backgroundTint="@color/darkGreen"
+        android:text="אישור"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/confirm_detail_fragment_btn" />
+
+    </LinearLayout>
+
+    <include layout="@layout/remote_view_notification"
+        android:id="@+id/confirm_detail_fragment_notification" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_area_book_owners"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.myapplication.AreaBookOwners">
+
+    <include layout="@layout/top_bar"
+        android:id="@+id/my_tool_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:textSize="16sp"
+        android:lines="2"
+        android:textColor="@color/white"
+        android:paddingRight="20dp"
+        android:id="@+id/AreaBookOwners_search_result"
+        android:gravity="center"
+        android:background="@color/publicDark"
+        android:layout_below="@id/my_tool_bar"
+        android:text="תוצאות החיפוש עבור" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/my_tool_bar"
+        android:src="@drawable/shadow"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/AreaBookOwners_search_result">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/AreaBookOwners_listView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:id="@+id/AreaBookOwners_progressBar">
+
+                <ProgressBar
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="20dp"
+                    android:progressTint="@color/publicDark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/publicDark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text=" המערכת טוענת נתונים \n אנא המתן"/>
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

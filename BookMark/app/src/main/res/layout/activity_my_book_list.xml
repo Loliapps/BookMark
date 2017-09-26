@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_book_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myapplication.MyBookList">
+
+    <include layout="@layout/top_bar"
+        android:id="@+id/my_tool_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MyBookListActivity_ListView"
+        android:layout_below="@id/my_tool_bar"
+        android:layout_marginBottom="45dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/MyBookListActivity_fragment"
+        android:layout_below="@id/my_tool_bar"
+        android:layout_marginBottom="45dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:background="#70000000"
+        android:visibility="gone">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MyBookListActivity_fragment_borrower_ListView"
+            android:background="@color/white"
+            android:layoutDirection="rtl">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
