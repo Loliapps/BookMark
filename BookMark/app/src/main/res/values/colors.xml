@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#034777</color>
+    <color name="personal">#0162a7</color>
+    <color name="colorAccent">#353131</color>
+    <color name="darkGray">#353131</color>
+    <color name="publicDark">#10afb5</color>
+    <color name="publicColor">#6db8bb</color>
+    <color name="brightBackground">#c6af83</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#25000000</color>
+    <color name="red">#f00</color>
+    <color name="green">#159b4e</color>
+    <color name="darkGreen">#097135</color>
+    <color name="darkBrown">#391806</color>
+    <color name="chatIn">#ffe2b5</color>
+    <color name="chatOut">#e1d7af</color>
+    <color name="light_gray">#939391</color>
+    <color name="black">#000000</color>
+
+</resources>

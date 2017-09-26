@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">הסיפרייה</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sharedPref">myLogin</string>
+    <string name="sharedPrefUserName">user</string>
+    <string name="sharedPrefUserPass">pass</string>
+    <string name="sharedPrefUserCity">address</string>
+    <string name="sharedPrefUserCityId">city_id</string>
+    <string name="sharedPrefUserCountyId">county_id</string>
+    <string name="sharedPrefConfirmCode">code</string>
+    <string name="sharedPrefConfirmTime">time</string>
+    <string name="sharedPrefVerify">verify</string>
+    <string name="sharedPrefGetToken">fcm_token</string>
+    <string name="sharedPrefUserId">userId</string>
+    <string name="sharedPrefRegistered">registered</string>
+
+
+    <string name="confirm">
+
+        בדקות הקרובות יישלח אליך במסרון
+        קוד לאישור פרטים.
+        על מנת להמשיך בתהליך הרישום הראשוני ולערוך את הפרופיל האישי, יש להקליד את קוד האישור שנשלח אליך.
+
+    </string>
+
+
+    <string name="addBook">
+            על מנת להרחיב את מאגר הספרים המושאלים אנא הכנס את הספרים שברשותך.
+    </string>
+    <string name="user_book_pref">סמן את העדפות הקריאה שלך:</string>
+    <string name="user_name_heb">שם משתמש :</string>
+    <string name="password_heb">סיסמה :</string>
+    <string name="city_heb">עיר מגורים :</string>
+    <string name="email">: E-mail</string>
+    <string name="phone_heb">טלפון :</string>
+    <string name="image_upload">להעלות תמונה לחץ כאן</string>
+    <string name="continu">המשך</string>
+
+
+    <string-array name="searchBy">
+        <item>שם הספר</item>
+        <item>שם הסופר</item>
+        <item>גאנר</item>
+    </string-array>
+
+    <string name="spinner_prompt">חפש לפי</string>
+
+</resources>
