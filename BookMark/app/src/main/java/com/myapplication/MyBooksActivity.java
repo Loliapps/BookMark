@@ -128,7 +128,7 @@ public class MyBooksActivity extends BaseActivity implements DataReceivedListene
         if (data.contentEquals("success")){
             Toast.makeText(this,"הספרים נרשמו בהצלחה",Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(this,"שגיעה בקליטת הנתונים",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"שגיאה בקליטת הנתונים",Toast.LENGTH_LONG).show();
         }
     }
 
